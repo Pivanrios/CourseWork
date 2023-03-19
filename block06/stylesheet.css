@@ -1,0 +1,55 @@
+/*Header section*/
+header{
+    
+    padding: 0px 0px;
+    margin: 1px 1px;
+}
+ol.nav{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    
+}
+li.nav{
+    display: inline-block;
+
+}
+
+/*Body Section*/
+body{
+    color: navy;
+}
+h2{
+    border: 1px solid navy;
+    margin: 5px 0px;
+    padding: 0px 10px; 
+    
+}
+section .category{
+    display: inline-block;
+    width:20%;
+    height: 100;
+    background-color: skyblue;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+img{
+    width: 33%;
+    max-width: 250px;
+    max-height: 150px;
+}
+
+
+/* Footer section*/
+footer{
+    margin-top: 20px;
+    border-top: 1px solid navy;
+}
+#contact{
+    list-style: none;
+    padding-left: 10px;
+}
+div.category{
+    display: inline-block;
+    width: 30%;
+}

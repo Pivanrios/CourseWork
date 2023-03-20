@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShappingList</title>
+    <link rel="stylesheet" href="stylesheets.css">
+    <!--We start use style in page to define de main grids on the page -->
+    <style>
+        /*we set the grid areas of the document*/
+        .header{grid-area: header;}
+        .main{grid-area: main;}
+        .footer{grid-area: footer;}
+        /*we use css comment tags to comment on this part of the document.*/
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header''main''footer';
+            gap: 1px;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body class="grid-container"> 
+    <!--we define the body as the main container-->
+        <div class="header">
+            <nav class="container"> 
+                <a href="#home" class="item1">Home</a>
+                <a href="#alacena" class="item2">Pantry</a>
+                <a href="#refrigerador" class="item3">Refrigerator</a>
+                <a href="#contact" class="item4">Contact</a>
+            </nav>
+        </div>
+        <!--We us div to contain the main part of the page-->
+        <div class="main" id="home">
+            <!--we add the title and subtaitle -->
+            <div class="title">
+                <h1>ShappingList</h1>
+                <h2>A easy way to save your groceries list</h2>
+            </div>
+            <!--second section of the main-->
+            <div class="seccion1" id="alacena">
+                <section>
+                    <h3 >Pantry</h3>
+                    <div class="container">
+                        <article class="item1">
+                            <h4>Canned</h3>
+                            <ul>
+                                <li>Tuna</li>
+                                <li>Corn</li>
+                                <li>Veggies</li>
+                                <li>Chipotle</li>
+                            </ul>
+                        </article>
+
+                        <article class="item2">
+                            <h4>Fruits</h3>
+                            <ul>
+                                <li>Banana</li>
+                                <li>Apple</li>
+                                <li>Mango</li>
+                                <li>Avocado</li>
+                                <li>Kiwi</li>
+                            </ul>
+                        </article>
+
+                        <article class="item3"> 
+                            <h4>Dry</h3>
+                            <ul>
+                                <li>Rice</li>
+                                <li>Pasta</li>
+                                <li>Beans</li>
+                                <li>Oatmeal</li>
+                            </ul>
+                        </article>
+                        <img src="images/frutascolore.jpg" alt="Frutas" class="item4">
+
+                    </div>
+                </section>
+
+            </div>
+            <div class="seccion2" id="refrigerador">
+                <section>
+                    <h3>Refrigerator</h3>
+                    <div class="container">
+                        <article class="item1">
+                            <h4>Veggies</h3>
+                            <ul>
+                                <li>Tomato</li>
+                                <li>Onion</li>
+                                <li>Celery</li>
+                                <li>Lettuce</li>
+                            </ul>
+                        </article>
+
+                        <article class="item2">
+                            <h4>Dairy</h3>
+                            <ul>
+                                <li>Milk</li>
+                                <li>Yogurt</li>
+                                <li>Sour Cream</li>
+                                <li>Mayonnaise</li>
+                            </ul>
+                        </article>
+
+                        <article class="item3">
+                            <h4>Beverages</h3>
+                            <ul>
+                                <li>Juice</li>
+                                <li>Wine</li>
+                                <li>Baileys</li>
+                                <li>Soda</li>
+                            </ul>
+                        </article>
+                        <img src="images/piramide.jpeg" alt="piramide del buen comer">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer" id="contact">
+            <footer class="container">
+                <section class="item1">
+                    <!--we use inline style to set the size -->
+                    <h5 style="font-size: 15px;">Contact</h5>
+                    <ul>
+                        <li>Chime:phperezr</li>
+                        <li>Github:pivanrios</li>
+                        <li>Blog: toolsoftomorrow</li>
+                    </ul>
+                </section>
+                 
+                <section class="item2">
+                    <h5 style="font-size: 15px;">Copyright</h5>
+                </section>
+                <section class="item3">
+                    <h5 style="font-size: 15px;">Related Content</h5>
+                    <ul> 
+                        <li><a href="index.html">First Attempt</a></li>
+                        <li><a href="https://www.w3schools.com/css/css_grid.asp">Grid Layout</a></li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    
+</body>
+</html>

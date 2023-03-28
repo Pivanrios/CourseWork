@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShappList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+<!--this is the header area and is a navigation tab to go thru the page-->
+    <header>
+        <nav class="container">
+        <a href="#home">Home</a>
+        <a href="#alacena">Alacena</a>
+        <a href="#refri">Refrigerador</a>  
+        <a href="#cajon">Cajonera</a>
+        <a href="#foot">Contact</a>  
+        </nav>
+    </header>
+<!--Here is the title of the page-->
+    <div class="titulo" id="home">
+        <h1>ShappingList</h1>
+        <p>An easy way to save your list</p>
+    </div>
+<!--Here we start with our sections of the page-->
+    <section id="alacena">
+        <h2>Alacena</h2>
+        <!-- We use a div as a container to use flex-->
+        <div class="container">
+<!--the items inside the container will be articles with a heading and a list-->
+            <article>
+                <h3>Latas</h3>
+                <ul>
+                    <li>Atun</li>
+                    <li>Chipotle</li>
+                    <li>Campesina</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Especies</h3>
+                <ul>
+                    <li>Sal</li>
+                    <li>Pimienta</li>
+                    <li>Papikra</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Cereales</h3>
+                <ul>
+                    <li>Avena</li>
+                    <li>Arroz</li>
+                    <li>Frijol</li>
+                </ul>
+            </article>
+<!--we add ad image-->
+            <img src="images/frutascolore.jpg" alt="foto">
+        
+        </div>
+    
+    </section>
+<!--section 2-->
+    <section id="refri">
+        <h2>Refrigerador</h2>
+        <div class="container">
+            <article>
+                <h3>Lacteos</h3>
+                <ul>
+                    <li>Leche</li>
+                    <li>Yogurt</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Bebidas</h3>
+                <ul>
+                    <li>Vino</li>
+                    <li>Jugo</li>
+                    <li>Soda</li>
+                </ul>
+            </article>
+            <img src="images/piramide.jpeg" alt="Piramide">
+        </div>
+    </section>
+<!--section 3-->
+    <section id="cajon">
+        <h2>Cajonera</h2>
+        <div class="container">
+            <article>
+                <h3>Empaque</h3>
+                <ul>
+                    <li>Zipploc</li>
+                    <li>Aluminio</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Servilletas</h3>
+                <ul>
+                    <li>Toallas</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Galletas</h3>
+                <ul>
+                    <li>Oreo</li>
+                    <li>Chips</li>
+                    <li>Emperador</li>
+                    <li>Chokies</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+<!--this is the footer -->
+    <footer class="container" id="foot">
+        <!--we use the footer as a container -->
+        <article>
+            <h3>Contact</h3>
+            <ul>
+                <li>phperezr</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>CopyRight</h3>
+            <p>Peterivers 2023</p>
+
+        </article>
+
+        <article>
+            <h3>Related content</h3>
+            <ul>
+                <li><a href="index.html">First version</a></li>
+                <li><a href="Workshop06.html">Grid version</a></li>
+                <li><a href=""></a></li>
+            </ul>
+
+        </article>
+        
+    </footer>
+</body>
+</html>

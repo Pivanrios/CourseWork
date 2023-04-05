@@ -8,13 +8,17 @@
 7.- Colors
 8.- Numeros
 9.- Forms
+10.-Media Queries
 */
 /*Here we draw the background*/
 body{
     display: flex;
+}
+#container{
+    display: flex;
     /*shorthand-direction-wrap*/
-    flex-flow: column wrap;
-    background-color: bisque;
+    flex-flow: row wrap;
+    width: 95%;
     gap: 10px;/*uno --*/
 }
 span{
@@ -42,7 +46,7 @@ div.box{
     /*the viewport height*/
     height: 53vh;
     display: flex;
-    flex-flow: row-reverse wrap-reverse;
+    flex-flow: row wrap-reverse;
 }
 /*Triangles*/
 .triangle {
@@ -50,22 +54,17 @@ div.box{
     height: 0;/*width--type-----color*/
     border-left: 100px solid transparent;;
     border-right: 100px solid transparent;
-  }
+}
 #green{
     border-bottom: 190px solid green;
-    position: absolute;
-    right: 70px;
-    /*the triangles go between the background and the circles*/
-    z-index: 2;
-    
+    position: relative;
+    left: 0;
 }
-/*Uncover the combination-for website project*/
-.triangle#green:hover{
-    right: 170px;
-    transition-duration: 5s;
-}
+
 #yellow{
     border-bottom: 190px solid greenyellow;
+    position: relative;
+    left: 50px;
 }
 
 /*Grass----*/
@@ -99,7 +98,7 @@ div.box{
 }
 #four{
     position: absolute;
-    top: 195px;left: 75%;
+    top: 195px;left: 60%;
 }
 #five{
     position: absolute;
@@ -130,16 +129,7 @@ span.num{
     font-size: larger;
     z-index: 1;
 }
-div#dos:hover{
-    position: absolute;
-    top: 160px;left: 30%;
-    transition-duration: 5s;
-}
-div#uno:hover{
-    position: absolute;
-    top: 60px;left: 50%;
-    transition-duration: 5s;
-}
+
 #three{
     width: 100px;
     position: relative;
@@ -151,10 +141,72 @@ form.container{
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+
 }
 h3{
     margin: 0;
 }
 button{
     width: 100px;
+}
+
+/*10.-Media Queries*/
+/**/
+@media only screen and (min-width:1025px) {
+/*Uncover the combination-for website project*/
+    #green{
+        border-bottom: 190px solid green;
+        position: absolute;
+        /*the triangles go between the background and the circles*/
+        z-index: 2;
+        
+    }
+    .triangle#green:hover{
+        left: 100px;
+        transition-duration: 5s;
+    }
+    div#dos:hover{
+        position: absolute;
+        top: 160px;left: 30%;
+        transition-duration: 5s;
+    }
+    div#uno:hover{
+        position: absolute;
+        top: 60px;left: 50%;
+        transition-duration: 5s;
+    }
+    #main{
+        flex-flow: row wrap-reverse;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    body{
+        flex-flow: column wrap;
+    }
+    #container{
+        width: 100%;
+    }
+    span.num{
+        display: none;
+    }
+}
+/*Phone view*/
+@media only screen and (max-width:480px){
+    #sky{
+        height: 60px;
+    }
+    #uno,#dos{
+        width: 50px;
+        height: 50px;
+
+    }
+    .circle{
+        width: 15px;
+        height: 15px;
+    }
+    #green{
+        display: none;
+    }
+    
 }

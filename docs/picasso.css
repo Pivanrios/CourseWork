@@ -1,0 +1,212 @@
+/*Table of Content
+1.-Background
+2.-Sky
+3.-Main/Middle section
+4.-Grass
+5.-Triangles
+6.-Circles
+7.- Colors
+8.- Numeros
+9.- Forms
+10.-Media Queries
+*/
+/*Here we draw the background*/
+body{
+    display: flex;
+}
+#container{
+    display: flex;
+    /*shorthand-direction-wrap*/
+    flex-flow: row wrap;
+    width: 95%;
+    gap: 10px;/*uno --*/
+}
+span{
+    width: 100%;/*dos---*/
+}
+
+/*Here we divide the sky*/
+#sky{
+    height: 35vh;/*tres*/
+    display: flex;
+    /*----direction-wrap--- */
+    flex-flow: row wrap;
+    gap: 5px;
+    justify-content:space-between;
+    
+}
+div.box{
+    /*percentage of its parent*/
+    width: 32%;
+    height: 100%;
+}
+
+/*Main or middle part of the background*/
+#main{
+    /*the viewport height*/
+    height: 53vh;
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+/*Triangles*/
+.triangle {
+    width: 0; 
+    height: 0;/*width--type-----color*/
+    border-left: 100px solid transparent;;
+    border-right: 100px solid transparent;
+}
+#green{
+    border-bottom: 190px solid green;
+    position: relative;
+    left: 0;
+}
+
+#yellow{
+    border-bottom: 190px solid greenyellow;
+    position: relative;
+    left: 50px;
+}
+
+/*Grass----*/
+#grass{
+    height: 5vh;
+    background-color: greenyellow;
+}
+
+/*Circles*/
+.circle{
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    z-index: 2;
+}
+#uno{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;left: 50%;
+}
+#dos{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 130px;left: 30%;
+}
+#tres{
+    position: absolute;
+    top: 95px;left: 10%;
+}
+#four{
+    position: absolute;
+    top: 195px;left: 60%;
+}
+#five{
+    position: absolute;
+    top: 250px;left: 40%;
+}
+#six{
+    position: absolute;
+    top: 250px;left: 0%;
+}
+
+
+/*Colors*/
+.blue{
+    background-color: aqua;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: orangered;
+}
+
+/*numeros*/
+span.num{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    z-index: 1;
+}
+
+#three{
+    width: 100px;
+    position: relative;
+    top: 100px;right: 120px;
+    z-index: 1;
+}
+/*formas*/
+form.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+h3{
+    margin: 0;
+}
+button{
+    width: 100px;
+}
+
+/*10.-Media Queries*/
+/**/
+@media only screen and (min-width:1025px) {
+/*Uncover the combination-for website project*/
+    #green{
+        border-bottom: 190px solid green;
+        position: absolute;
+        /*the triangles go between the background and the circles*/
+        z-index: 2;
+        
+    }
+    .triangle#green:hover{
+        left: 100px;
+        transition-duration: 5s;
+    }
+    div#dos:hover{
+        position: absolute;
+        top: 160px;left: 30%;
+        transition-duration: 5s;
+    }
+    div#uno:hover{
+        position: absolute;
+        top: 60px;left: 50%;
+        transition-duration: 5s;
+    }
+    #main{
+        flex-flow: row wrap-reverse;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    body{
+        flex-flow: column wrap;
+    }
+    #container{
+        width: 100%;
+    }
+    span.num{
+        display: none;
+    }
+}
+/*Phone view*/
+@media only screen and (max-width:480px){
+    #sky{
+        height: 60px;
+    }
+    #uno,#dos{
+        width: 50px;
+        height: 50px;
+
+    }
+    .circle{
+        width: 15px;
+        height: 15px;
+    }
+    #green{
+        display: none;
+    }
+    
+}

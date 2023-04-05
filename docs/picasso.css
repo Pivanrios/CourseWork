@@ -1,17 +1,29 @@
+/*Table of Content
+1.-Background
+2.-Sky
+3.-Main/Middle section
+4.-Grass
+5.-Triangles
+6.-Circles
+7.- Colors
+8.- Numeros
+9.- Forms
+*/
 /*Here we draw the background*/
 body{
     display: flex;
+    /*shorthand-direction-wrap*/
     flex-flow: column wrap;
     background-color: bisque;
-    gap: 10px;
+    gap: 10px;/*uno --*/
 }
 span{
-    width: 100%;
+    width: 100%;/*dos---*/
 }
 
 /*Here we divide the sky*/
 #sky{
-    height: 35vh;
+    height: 35vh;/*tres*/
     display: flex;
     /*----direction-wrap--- */
     flex-flow: row wrap;
@@ -20,12 +32,14 @@ span{
     
 }
 div.box{
+    /*percentage of its parent*/
     width: 32%;
     height: 100%;
 }
 
 /*Main or middle part of the background*/
 #main{
+    /*the viewport height*/
     height: 53vh;
     display: flex;
     flex-flow: row-reverse wrap-reverse;
@@ -33,7 +47,7 @@ div.box{
 /*Triangles*/
 .triangle {
     width: 0; 
-    height: 0; 
+    height: 0;/*width--type-----color*/
     border-left: 100px solid transparent;;
     border-right: 100px solid transparent;
   }
@@ -41,10 +55,11 @@ div.box{
     border-bottom: 190px solid green;
     position: absolute;
     right: 70px;
+    /*the triangles go between the background and the circles*/
     z-index: 2;
     
 }
-/*Uncover the combination*/
+/*Uncover the combination-for website project*/
 .triangle#green:hover{
     right: 170px;
     transition-duration: 5s;
@@ -130,4 +145,16 @@ div#uno:hover{
     position: relative;
     top: 100px;right: 120px;
     z-index: 1;
+}
+/*formas*/
+form.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+h3{
+    margin: 0;
+}
+button{
+    width: 100px;
 }
